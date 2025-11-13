@@ -1,0 +1,164 @@
+@charset "UTF-8";
+/* 색상 */
+/* 폰트 */
+/* mixin */
+#wrap {
+  margin: 13px auto;
+  width: 880px;
+  /* 공통 디자인 */
+}
+#wrap .title {
+  font-size: 1.063rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+#wrap .card_list {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 12px;
+}
+#wrap .card_list .product_card {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 137px;
+  overflow: hidden;
+}
+#wrap .card_list .product_card > a {
+  width: 137px;
+  height: 184px;
+  margin-bottom: 10px;
+}
+#wrap .card_list .product_card > a > img {
+  width: 100%;
+  height: 100%;
+}
+#wrap .card_list .product_card .product_contents {
+  gap: 0;
+  line-height: 0.8;
+}
+#wrap .card_list .product_card .product_contents .product_top {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 16px;
+}
+#wrap .card_list .product_card .product_contents .product_top .brand_name {
+  font-size: 0.625rem;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+#wrap .card_list .product_card .product_contents .product_top .like_btn img {
+  width: 10px;
+  height: 10px;
+  margin-bottom: 7px;
+}
+#wrap .card_list .product_card .product_contents .product_name {
+  font-size: 0.625rem;
+  color: #707070;
+  width: max-content;
+  margin-bottom: 4px;
+}
+#wrap .card_list .product_card .product_contents a {
+  height: fit-content;
+}
+#wrap .card_list .product_card .product_contents a .product_sale {
+  display: inline-block;
+  font-size: 0.625rem;
+  color: #ff4f0c;
+  font-weight: 700;
+  height: fit-content;
+  padding: 0;
+  margin: 0;
+}
+#wrap .card_list .product_card .product_contents a .product_price {
+  display: inline-block;
+  font-size: 0.625rem;
+  font-weight: 700;
+  height: fit-content;
+  padding: 0;
+  margin: 0;
+}
+#wrap .section1 {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 35px;
+  justify-content: center;
+  align-items: center;
+  margin: 13px auto 65px;
+}
+#wrap .section1 .left .img_box {
+  position: relative;
+  width: 412px;
+  height: 412px;
+  background-image: url("../images/001.png");
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+}
+#wrap .section1 .left .img_box .like2_btn {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  opacity: 0.4;
+}
+#wrap .section1 .right {
+  position: relative;
+  height: 412px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+}
+#wrap .section1 .right .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#wrap .section1 .right .text h1 {
+  font-size: 1.875rem;
+  font-weight: 600;
+}
+#wrap .section1 .right .text span {
+  font-size: 0.75rem;
+  color: #aaa;
+}
+#wrap .section1 .right .card_list {
+  margin: auto 0 0 0;
+}
+#wrap .section2 .title_more_g {
+  position: relative;
+}
+#wrap .section2 .title_more_g .title {
+  display: inline-block;
+}
+#wrap .section2 .title_more_g a .viewmore {
+  font-size: 0.625rem;
+  color: #aaa;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 20%;
+}
+
+@media screen and (max-width: 767px) {
+  #wrap {
+    margin: 10px auto;
+    width: fit-content;
+  }
+  #wrap .section1 {
+    width: 100%;
+  }
+  #wrap .section1 .right {
+    display: none;
+  }
+  #wrap .section2 .title_more_g a {
+    display: none;
+  }
+  #wrap .section2 .card_list .card4,
+  #wrap .section2 .card_list .card5,
+  #wrap .section2 .card_list .card6 {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

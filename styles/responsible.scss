@@ -1,0 +1,14 @@
+@use './common.scss' as *;
+
+@media screen and (max-width:767px){
+    #wrap {
+        margin:10px auto;
+        width: fit-content;
+    }
+    #wrap .section1 {width: 100%;}
+    #wrap .section1 .right {display:none;}
+    #wrap .section2 .title_more_g a {display:none;} 
+    #wrap .section2 .card_list .card4,
+    #wrap .section2 .card_list .card5,
+    #wrap .section2 .card_list .card6 {display:none;}
+}
